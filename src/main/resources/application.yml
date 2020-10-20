@@ -1,3 +1,12 @@
+feign:
+  hystrix:
+    enabled: true
+    
+hystrix:
+  command:
+    default:
+      execution.isolation.thread.timeoutInMilliseconds: 610
+
 server:
   port: 8080
 ---
@@ -62,12 +71,3 @@ spring:
         event-out:
           destination: housebook
           contentType: application/json
-
-feign:
-  hystrix:
-    enabled: true
-    
-hystrix:
-  command:
-    default:
-      execution.isolation.thread.timeoutInMilliseconds: 610
