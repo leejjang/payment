@@ -1,12 +1,3 @@
-feign:
-  hystrix:
-    enabled: true
-    
-hystrix:
-  command:
-    default:
-      execution.isolation.thread.timeoutInMilliseconds: 610
-
 server:
   port: 8080
 ---
